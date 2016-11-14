@@ -28,16 +28,22 @@
           zoom: 4
         });
 
+        // This will get data on 100 buffalo.  Pay close attention to url
+        // Also, we have to set the datatype to "JSONP".  A little confusing
+        // why, I would recommend looking it up if you're curious.
         $.ajax({
           url: "https://bison.usgs.gov/api/search.jsonp?species=Bison%20bison&type=scientific_name&start=0&count=100&params=basisOfRecord%3A(observation)",
           method: "GET",
           dataType: "JSONP",
           success: function(results) {
 
-            // convert bison into markers
+            // Once we have our data, we can easily convert them into map
+            // markers
             var marker;
             for(var i = 0; i < results.data.length; i ++ ) {
 
+              // You can add to the marker, such as colors and a text pop-up,
+              // but for this example I'm just using location data.
               marker = new google.maps.Marker({
                 position: {
                   lat: parseFloat(results.data[i].decimalLatitude),
