@@ -1,4 +1,23 @@
+
 .navbar {
   background-color: #FFFBFE;
   color: #8A242C;
+
+.row {
+  padding: 400px 100px 10px 100px ;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+
+  background-color: #26E851;
+}
+
+html, body {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }
