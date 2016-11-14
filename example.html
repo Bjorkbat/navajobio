@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Example of How To Get BISON data</title>
+  </head>
+  <body>
+
+    <div id="map"></div>
+
+    <script src="/navajobio/js/jquery-3.1.1.min.js"></script>
+
+    <script>
+
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 35.528, lng: -108.742},
+          scrollwheel: false,
+          zoom: 4
+        });
+
+        $.ajax({
+          url: "https://bison.usgs.gov/api/search.jsonp?species=Bison%20bison&type=scientific_name&start=0&count=100&params=basisOfRecord%3A(observation)",
+          method: "GET",
+          dataType: "JSONP",
+          success: function(results) {
+
+            // convert bison into markers
+            var marker;
+            for(var i = 0; i < results.data.length; i ++ ) {
+
+              marker = new google.maps.Marker({
+                position: {
+                  lat: parseFloat(results.data[i].decimalLatitude),
+                  lng: parseFloat(results.data[i].decimalLongitude)
+                },
+                map: map
+              });
+
+            }
+          }
+        });
+``    }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-U_X7wKvIalgg7YEZ1i9gbGtzhAvb0q0&callback=initMap"
+      async defer></script>
+  </body>
+</html>
