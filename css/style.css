@@ -2,6 +2,7 @@
 .navbar {
   background-color: #FFFBFE;
   color: #8A242C;
+}
 
 .row {
   padding: 400px 100px 10px 100px ;
@@ -20,4 +21,23 @@ h1 {
 html, body {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
+  height: 100%;
+}
+
+.email-form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+.carousel-inner .item img {
+  height: 100%;
+}
+
+.carousel-indicators .active{
+  background-color:#E4BA3C;
+}
+
+.carousel-indicators li{
+  border-color:#B0DC7D;
 }
