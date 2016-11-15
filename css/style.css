@@ -1,19 +1,30 @@
 .row {
-  padding: 400px 100px 10px 100px ;
-
-}
-
-h1 {
+  padding: 0px 100px 10px 100px ;
   text-align: center;
+
 }
 
-.container {
-
-  background-color: #26E851;
-}
 
 html, body {
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: "Snowburst One", cursive;
 
 }
+.page-footer {
+  color: #1974ff;
+  clear: both;
+  margin: 0em 0em 0em 0em;
+  padding: 0.75em 0.75em;
+  background: rgba(76,56,9,0.88);
+  position: relative;
+  top: 880px;
+  border-top: 1px solid #8bc34a;
+}
+
+
+.page-header {
+    padding-top: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #8BC34a
+  }
