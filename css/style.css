@@ -1,16 +1,15 @@
-.row {
-  padding: 0px 100px 10px 100px ;
+.row{
   text-align: center;
 
 }
 
-
 html, body {
-  height: 100%;
-  width: 100%;
+
   font-family: "Snowburst One", cursive;
 
 }
+
+
 .page-footer {
   color: #1974ff;
   clear: both;
@@ -23,7 +22,22 @@ html, body {
 }
 
 
-.page-header {
-  
-    border-bottom: 1px solid #8BC34a
+.logo-lg {
+    border-bottom: 1px solid #8BC34a;
   }
+
+  .navbar-nav > li :hover {
+    color: brown;
+
+  }
+
+
+
+  i {
+    color: #8BC34a;
+
+  }
+
+  button {width:10em}
+  button:hover span {display:none}
+  button:hover:before {content:"Who We Are"; color: #8bc34a}
