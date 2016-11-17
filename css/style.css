@@ -31,7 +31,9 @@ html, body {
 
   }
 
-
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #eae184;
+}
 
   i {
     color: #8BC34a;
@@ -41,3 +43,5 @@ html, body {
   button {width:10em}
   button:hover span {display:none}
   button:hover:before {content:"Who We Are"; color: #8bc34a}
+
+  h4 a {padding-bottom: 0px;}
