@@ -5,9 +5,7 @@ html, body {
   z-index:2;
 }
 
-a {
-  padding-bottom: 200px;
-}
+
 /*deer css*/
 
 body,html {
@@ -48,13 +46,6 @@ h1 {
 
 }
 
-.image-background {
-  background:url("../img/forest.jpg");
-  background-size: cover;
-  height: 100%;
-
-}
-
 .row > .col-md-4 text-center > a {
   padding-top: 250px;
 }
@@ -63,10 +54,6 @@ body {
 background:#212121;
 }
 
-#map {
-width: 100%;
-height: 800px;
-}
 
 .btn {
   margin-top: 100px;

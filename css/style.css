@@ -15,7 +15,7 @@ html, body {
   clear: both;
   margin: 0em 0em 0em 0em;
   padding: 0.75em 0.75em;
-  background: rgba(76,56,9,0.88);
+  background: rgb(76,56,9);
   position: relative;
   top: 50px;
   border-top: 1px solid #8bc34a;
@@ -26,22 +26,28 @@ html, body {
     border-bottom: 1px solid #8BC34a;
   }
 
-  .navbar-nav > li :hover {
-    color: brown;
+.navbar-nav > li :hover {
+  color: brown;
 
-  }
+}
 
 .nav>li>a:focus, .nav>li>a:hover {
   background-color: #eae184;
 }
 
-  i {
-    color: #8BC34a;
+i {
+  color: #8BC34a;
+}
+h4 a {padding-bottom: 0px;}
 
-  }
+.carousel-inner .item img {
+  height: 100%;
+}
 
-  button {width:10em}
-  button:hover span {display:none}
-  button:hover:before {content:"Who We Are"; color: #8bc34a}
+.carousel-indicators .active{
+  background-color:#E4BA3C;
+}
 
-  h4 a {padding-bottom: 0px;}
+.carousel-indicators li{
+  border-color:#B0DC7D;
+}
