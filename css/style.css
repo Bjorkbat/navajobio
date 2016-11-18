@@ -13,7 +13,7 @@ html, body {
 .page-footer {
   color: #1974ff;
   clear: both;
-  margin: 0em 0em 0em 0em;
+  margin: 0px;
   padding: 0.75em 0.75em;
   background: rgb(76,56,9);
   position: relative;
@@ -41,7 +41,8 @@ i {
 h4 a {padding-bottom: 0px;}
 
 .carousel-inner .item img {
-  height: 100%;
+  height: 200px;
+  width: 300px;
 }
 
 .carousel-indicators .active{
@@ -51,3 +52,38 @@ h4 a {padding-bottom: 0px;}
 .carousel-indicators li{
   border-color:#B0DC7D;
 }
+
+/*deer css*/
+
+body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+.deer {
+  animation: deer-walk steps(18) 3.0s infinite;
+  background: url('http://www.ucsc.edu/features/images/rachel-carson-college/deer-v1.svg') 0 60px no-repeat;
+  height: 93.75px;
+  width: 150px;
+  z-index: 2;
+  margin-top:0px;
+}
+
+@keyframes deer-walk {
+  0% {
+    background-position: 0 0;
+    margin-left: 0;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0 -1687.5px;
+    margin-left:  1200px;
+    opacity: 1;
+  }
+}
+
+
+/*end of deer css*/
