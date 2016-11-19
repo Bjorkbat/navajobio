@@ -63,6 +63,7 @@ body,html {
 
 }
 
+
 .deer {
   animation: deer-walk steps(18) 3.0s infinite;
   background: url('http://www.ucsc.edu/features/images/rachel-carson-college/deer-v1.svg') 0 60px no-repeat;
