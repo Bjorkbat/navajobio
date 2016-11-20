@@ -41,8 +41,8 @@ i {
 h4 a {padding-bottom: 0px;}
 
 .carousel-inner .item img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: auto;
 }
 
 .carousel-indicators .active{
